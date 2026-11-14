@@ -909,8 +909,8 @@ a[href*="github.com"] .redirector svg path{
 }
 @media (width < 800px){
     :root{
-        --font-scale: 0.8;
-        font-size: 80%;
+        --font-scale: 0.9;
+        font-size: 90%;
     }
 }
 /*Certifications Section*/
