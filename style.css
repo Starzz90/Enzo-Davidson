@@ -1060,7 +1060,7 @@ a[href*="github.com"] .redirector svg path{
 .certification-desc{
     background-color: var(--background-color);
     width: 100%;
-    padding: 0px 15px;
+    padding: 0px 14px;
     padding-bottom: 10px;
     font-size: calc(10px * var(--font-scale));
     box-sizing: border-box;
