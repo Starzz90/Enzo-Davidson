@@ -1,4 +1,5 @@
 :root{
+    --font-scale: 1;
     --background-color: hsl(60, 100%, 99%);
     --box-color: hsl(0, 0%, 98%);
     --text-color: hsl(0, 0%, 4%);
@@ -91,7 +92,7 @@ body{
     gap: 12px;
 }
 .main-head{
-    font-size: 40px;
+    font-size: calc(40px * var(--font-scale));
     color: var(--text-color);
     font-weight: 800;
     bottom: 0;
@@ -105,7 +106,7 @@ body{
     background: var(--background-color);
     color: var(--accents-40);
     font: inherit;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     font-weight: 650;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -154,7 +155,7 @@ ul{
     padding: 8px 0px;
 }
 .descriptions{
-    font-size: 13.5px;
+    font-size: calc(13.5px * var(--font-scale));
     color: var(--text-color);
     margin-top: 10px;
     width: 100%;
@@ -163,7 +164,7 @@ ul{
 .resume{
     background-color: var(--v-accent);
     color: var(--background-color);
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     border-radius: 5px;
     padding: 5px 10px;
     border: 2px solid transparent;
@@ -209,7 +210,7 @@ v{
     width: 100%;
 }
 .accent-head{
-    font-size: 20px;
+    font-size: calc(20px * var(--font-scale));
     color: var(--very-dark);
     font-weight: 700;
     display: flex;
@@ -218,7 +219,7 @@ v{
     gap: 8px;
 }
 .center-accent-head{
-    font-size: 28px;
+    font-size: calc(28px * var(--font-scale));
     color: var(--subtles);
     font-weight: 700;
     display: flex;
@@ -226,7 +227,7 @@ v{
     margin-bottom: 8px;
 }
 .accent-head-desc{
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     color: var(--secondary);
     font-weight: 500;
     display: flex;
@@ -238,7 +239,7 @@ v{
     font-weight: 800;
     letter-spacing: 0.8px;
     color: var(--background-color);
-    font-size: 30px;
+    font-size: calc(30px * var(--font-scale));
     text-align: center;
     background-color: var(--accents-30);
     border-radius: 10px;
@@ -253,11 +254,11 @@ v{
 }
 #powered{
     font-weight: bolder;
-    font-size: 18px;
+    font-size: calc(18px * var(--font-scale));
     text-align: center;
 }
 .descriptions-sub{
-    font-size: 15px;
+    font-size: calc(15px * var(--font-scale));
     color: var(--text-color);
     margin-top: 0.5rem;
     display: grid;
@@ -269,7 +270,7 @@ v{
 .work-titles{
     grid-column: 2;
     grid-row: 1;
-    font-size: 14px;
+    font-size: calc(14px * var(--font-scale));
     color: var(--text-color);
     font-weight: 550;
     display: flex;
@@ -300,7 +301,7 @@ v{
     transition: color 0.2s ease;
 }
 .toggle-grade{
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     color: var(--accents-40);
     margin-bottom: 5px;
     font-weight: 700;
@@ -327,7 +328,7 @@ v{
     outline-offset: 2px;
 }
 .work-description{
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     color: var(--v-accent-dark);
     display: flex;
 }
@@ -339,7 +340,7 @@ v{
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     color: var(--accents-40);
     font-weight: 550;
     display: flex;
@@ -381,13 +382,13 @@ v{
 .work-toggled{
     grid-column: 2 / 4;
     grid-row: 2;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     color: var(--secondary);
     overflow: hidden;
     margin-bottom: 10px;
 }
 .toggled-head{
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     margin-top: 5px;
     font-weight: 700;
     color: var(--text-color);
@@ -491,7 +492,7 @@ b{
 }
 .project-name{
     color: var(--accents-40);
-    font-size: 15px;
+    font-size: calc(15px * var(--font-scale));
     letter-spacing: 0.8px;
     margin: 0;
     font-weight: 600;
@@ -508,7 +509,7 @@ b{
     height: auto;
     z-index: 2;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     margin-top: 0px;
     gap: 8px;
 }
@@ -519,7 +520,7 @@ b{
     width: fit-content;
     box-sizing: border-box;
     padding: 2px 7px;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     font-weight: 600;
     color: var(--text-color);
 }
@@ -555,7 +556,7 @@ b{
     width: fit-content;
     box-sizing: border-box;
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     font-weight: 600;
     align-self: center;
     transition: background-color 0.2s ease;
@@ -578,7 +579,7 @@ b{
     width: fit-content;
     box-sizing: border-box;
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     font-weight: 600;
     transition: background-color 0.2s ease;
 }
@@ -647,7 +648,7 @@ a[href*="github.com"] .redirector svg path{
 }
 .project-tools label{
     color: var(--accents-40);
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     font-weight: 700;
 }
 .project-tools input{
@@ -661,19 +662,19 @@ a[href*="github.com"] .redirector svg path{
     background: var(--background-color);
     color: var(--text-color);
     font: inherit;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
 }
 .project-search-status{
     grid-column: 1 / -1;
     margin: 0;
     color: var(--super-accent);
     font-weight: 600;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
 }
 .project-empty{
     margin: 0 0 12px;
     color: var(--secondary);
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
 }
 .center{
     display: flex;
@@ -729,7 +730,7 @@ a[href*="github.com"] .redirector svg path{
     border-radius: 10px;
     background-color: var(--background-color);
     color: var(--accents-40);
-    font-size: 18px;
+    font-size: calc(18px * var(--font-scale));
     cursor: pointer;
 }
 .skills-button:focus-visible{
@@ -747,7 +748,7 @@ a[href*="github.com"] .redirector svg path{
     width: max(44px, calc((100cqi - 40px) / 5));
     height: max(44px, calc((100cqi - 40px) / 5));
     border-radius: 20px;
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     color: var(--box-color);
     align-self: center;
     box-shadow: 0 0 8px 2px var(--grey);
@@ -789,7 +790,7 @@ a[href*="github.com"] .redirector svg path{
     border-radius: 5px;
     background-color: var(--accents-40);
     color: var(--background-color);
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     line-height: 1.2;
     white-space: nowrap;
     opacity: 0;
@@ -807,7 +808,7 @@ a[href*="github.com"] .redirector svg path{
 .skill-pill{
     background-color: var(--accents-40);
     color: var(--background-color);
-    font-size: 11px;
+    font-size: calc(11px * var(--font-scale));
     border-radius: 5px;
     box-sizing: border-box;
     padding: 4px 10px;
@@ -838,7 +839,7 @@ a[href*="github.com"] .redirector svg path{
     background-color: var(--background-color);
     width: 100%;
     padding: 0px 15px;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     font-weight: 600;
     box-sizing: border-box;
     padding-top: 10px;
@@ -850,7 +851,7 @@ a[href*="github.com"] .redirector svg path{
     width: 100%;
     padding: 0px 15px;
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     box-sizing: border-box;
     padding-bottom: 10px;
     border-radius: 0px 0px 10px 10px;
@@ -904,6 +905,12 @@ a[href*="github.com"] .redirector svg path{
         background-color: #000;
         border-radius: 20px 20px 0px 0px;
         z-index: 1;
+    }
+}
+@media (width < 800px){
+    :root{
+        --font-scale: 0.7;
+        font-size: 70%;
     }
 }
 /*Certifications Section*/
@@ -992,7 +999,7 @@ a[href*="github.com"] .redirector svg path{
     background: var(--background-color);
     color: var(--text-color);
     font: inherit;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     cursor: pointer;
 }
 .certificate-viewer{
@@ -1013,7 +1020,7 @@ a[href*="github.com"] .redirector svg path{
     color: white;
     padding: 0;
     line-height: 1;
-    font-size: 24px;
+    font-size: calc(24px * var(--font-scale));
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease;
@@ -1035,7 +1042,7 @@ a[href*="github.com"] .redirector svg path{
 .certificate-dialog-title{
     margin: 10px 0 0;
     color: inherit;
-    font-size: 13px;
+    font-size: calc(13px * var(--font-scale));
     font-weight: 700;
     text-align: center;
 }
@@ -1044,7 +1051,7 @@ a[href*="github.com"] .redirector svg path{
     width: 100%;
     padding: 0px 15px;
     padding-top: 10px;
-    font-size: 12px;
+    font-size: calc(12px * var(--font-scale));
     font-weight: 700;
     box-sizing: border-box;
     display: flex;
@@ -1055,6 +1062,6 @@ a[href*="github.com"] .redirector svg path{
     width: 100%;
     padding: 0px 15px;
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: calc(10px * var(--font-scale));
     box-sizing: border-box;
 }
